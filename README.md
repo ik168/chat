@@ -52,10 +52,10 @@ cd /etc/supervisor/conf.d
 nano chat.conf
 
 输入以下内容
-
+```
 [program:chat]
 comand=/usr/local/bin/gunicorn wsgi --worker-class=gevent -t 9999 --bind 0.0.0.0:8000 --pid /tmp/chat.pid
 directory=/root/chat
 autostart=true
-
+```
 保存退出
